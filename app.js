@@ -10,14 +10,11 @@ class Die {
       this.div.setAttribute("id", "new_die");
       this.roll();
       arrDie.push(this.div);
-
       document.body.appendChild(this.div);
-      console.log(arrDie);
     });
     rollDie.addEventListener("click", () => {
     for (let i = 0; i < arrDie.length; i++) {
-       arrDie[i].textContent = this.roll();
-        
+       arrDie[i].textContent = randomNumber;
     }
     });
     sumDie.addEventListener("click", () => {
